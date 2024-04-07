@@ -1,26 +1,17 @@
-def main():
-    player_tracker()
-    board = initialiseBoard()
-    displayBoard(board)
-    
-def player_tracker():
-    currentplayer = 1
-    
-def initialiseBoard():
-    board = []
-    for _ in range(6):
-        row = []
-        for _ in range(7):
-            row.append('-')
-        board.append(row)
-    return board
-    
-def displayBoard(board):
-    for row in board:
-        for cell in row:
-            print(cell, end=' ')
-        print()
-    print()
+board = []
 
-if __name__ == "__main__":
-    main()
+def initialise_board():
+    for i in range(6):
+        board.append(["-", "-", "-", "-", "-", "-", "-"])
+
+def userinput():
+    col = int(input("Select col: "))
+    col = col - 1
+    board[0][col] = "o"
+
+def print_board():
+    for row in board:
+        for col in row:
+            print(col, end = " ")
+        print("")
+
