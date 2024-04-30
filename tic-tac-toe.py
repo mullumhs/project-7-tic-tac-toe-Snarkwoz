@@ -93,13 +93,13 @@ def player_turn(turncount):
                         row = input("Select row (1 - 3): ")
                 row = row - 1
 
-#def check_vertical_win():
+#def checkverticalwin():
 
 
-#def check_horizontal_win():
+#def checkhorizontalwin():
 
 
-#def check_diagonal_win():
+#def checkdiagonalwin():
 
 
 def print_grid():
@@ -113,9 +113,10 @@ def main():
     turncount = 1
     while True:
         player_turn(turncount)
-        #check_vertical_win()
-        #check_diagonal_win()
-        #check_horizontal_win()
+        #checkverticalwin()
+        #if checkvertical
+        #checkdiagonalwin()
+        #checkhorizontalwin()
         print_grid()
         if turncount == 9:
             print("It's a draw!")
